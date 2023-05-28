@@ -7,41 +7,51 @@
       "previewPath": null,
       "fields": [
         {
-          "title": "Title",
+          "title": "title",
           "name": "title",
-          "type": "string"
+          "type": "image"
         },
         {
-          "title": "Description",
+          "title": "description",
           "name": "description",
           "type": "string"
         },
         {
-          "title": "Publishing date",
-          "name": "date",
-          "type": "datetime",
-          "default": "{{now}}",
-          "isPublishDate": true
-        },
-        {
-          "title": "Content preview",
+          "title": "preview",
           "name": "preview",
-          "type": "image"
+          "type": "string"
         },
         {
-          "title": "Is in draft",
+          "title": "draft",
           "name": "draft",
           "type": "draft"
         },
         {
-          "title": "Tags",
+          "title": "tags",
           "name": "tags",
-          "type": "tags"
+          "type": "string"
         },
         {
-          "title": "Categories",
+          "title": "categories",
           "name": "categories",
           "type": "categories"
+        },
+        {
+          "title": "publish Date",
+          "name": "pubDate",
+          "default": "{{now}}",
+          "type": "datetime"
+        },
+        {
+          "title": "updated Date",
+          "name": "updatedDate",
+          "default": "{{now}}",
+          "type": "datetime"
+        },
+        {
+          "title": "heroImage",
+          "name": "heroImage",
+          "type": "image"
         }
       ]
     }
