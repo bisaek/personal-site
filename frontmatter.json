@@ -9,7 +9,7 @@
         {
           "title": "title",
           "name": "title",
-          "type": "image"
+          "type": "string"
         },
         {
           "title": "description",
@@ -19,7 +19,7 @@
         {
           "title": "preview",
           "name": "preview",
-          "type": "string"
+          "type": "image"
         },
         {
           "title": "draft",
