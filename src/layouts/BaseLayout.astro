@@ -1,4 +1,5 @@
 ---
+import Background from "../components/Background.svelte";
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
@@ -8,12 +9,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!DOCTYPE html>
-<!-- <html lang="da" class="bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 text-white"> -->
+<!-- <html lang="da" class="bg-gradient-to-tr from-pink-800 via-red-700 to-yellow-700 text-white min-h-screen"> -->
 <html lang="da" class="bg-gray-900 text-white">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
+		<Background client:only></Background>
+
 		<Header />
 		<main>
 			<slot></slot>
