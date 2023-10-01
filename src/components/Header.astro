@@ -3,15 +3,36 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
-<header>
-	<h2>
+<header class="transition  flex justify-between top-0  sticky">
+	<h2 class="text-2xl w-auto p-8 bg-black rounded-br-xl">
 		{SITE_TITLE}
 	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
+	<nav class="flex flex-row justify-between gap-6 p-8 rounded-bl-xl bg-black">
+			<!-- <HeaderLink href="/">Home</HeaderLink> -->
+			<!-- <HeaderLink href="/blog">Blog</HeaderLink> -->
+			<HeaderLink	derLink href="/about">Eksempler</HeaderLink>
+			<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
+			<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
+			<HeaderLink>Kontakt</HeaderLink>
+
+
+
 	</nav>
+	
 </header>
+
+<!-- <script lang="js">
+	const nav = document.querySelector('header');
+	addEventListener("scroll", (event) => {
+  
+  
+	  if (window.scrollY > 10) {
+		nav?.classList.remove("bg-black")
+	  } else {
+		nav?.classList.add("bg-black")
+	  }
+  
+	})
+	
+  </script>
+   -->
