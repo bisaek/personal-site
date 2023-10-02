@@ -36,14 +36,14 @@ onMount(() => {
 resize();
 step();
 window.onresize = resize;
-// canvas.onmousemove = onMouseMove;
-canvas.ontouchmove = onTouchMove;
-canvas.ontouchend = onMouseLeave;
+window.onmousemove = onMouseMove;
+window.ontouchmove = onTouchMove;
+window.ontouchend = onMouseLeave;
 document.onmouseleave = onMouseLeave;
 
 })
 
-window.addEventListener("mousemove", onMouseMove)
+// window.addEventListener("mousemove", onMouseMove)
 
 function generate() {
 
