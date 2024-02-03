@@ -1,7 +1,7 @@
 <script>  
       const citater = [
         "Jeg hedder Bertram",
-        "Jeg er web-udvikler",
+        "Jeg er webudvikler",
         "Jeg vil hjælpe dig",
         
       ]
