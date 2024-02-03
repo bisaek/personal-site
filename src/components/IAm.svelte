@@ -1,8 +1,8 @@
 <script>  
       const citater = [
-        "Jeg er Bertram",
+        "Jeg hedder Bertram",
         "Jeg er web-udvikler",
-        "Jeg vil Hjælpe dig",
+        "Jeg vil hjælpe dig",
         
       ]
       let IAM = citater[0]
