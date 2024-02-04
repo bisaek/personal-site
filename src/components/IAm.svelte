@@ -8,12 +8,17 @@
       let currentQuoteIndex = 0
       let currentText = "";
       let shouldAddLetter = true;
+      let waited = 0;
 
       setInterval(() => {
             if(!shouldAddLetter && currentText == "Jeg") {
               chooseNextQuote()
               shouldAddLetter = true;
-            } else if (currentText == quotes[currentQuoteIndex] && shouldAddLetter) shouldAddLetter = false
+              waited = 0
+            } else if (currentText == quotes[currentQuoteIndex] && waited != 10) {
+              shouldAddLetter = false
+              waited++
+            }
             else if(shouldAddLetter) addLetter()
             else removeLetter()
       }, 50)
