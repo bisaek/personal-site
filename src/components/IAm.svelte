@@ -1,18 +1,41 @@
 <script>  
-      const citater = [
+      const quotes = [
         "Jeg hedder Bertram",
         "Jeg er webudvikler",
         "Jeg vil hjælpe dig",
         
       ]
-      let IAM = citater[0]
+      let currentQuoteIndex = 0
+      let currentText = "";
+      let shouldAddLetter = true;
+
       setInterval(() => {
-            if(citater.indexOf(IAM) + 1 >= citater.length) IAM = citater[0]
-            else IAM = citater[citater.indexOf(IAM) + 1]
-      }, 5000)
+            if(!shouldAddLetter && currentText == "") {
+              chooseNextQuote()
+              shouldAddLetter = true;
+            } else if (currentText == quotes[currentQuoteIndex]) shouldAddLetter = false
+            else if(shouldAddLetter) addLetter()
+            else removeLetter()
+      }, 50)
+
+      function chooseRandomQuote() {
+        
+      }
+
+      function chooseNextQuote() {
+        
+      }
+
+      function addLetter() {
+        
+      }
+
+      function removeLetter() {
+        
+      }
   
   </script>
   
-{IAM}
+{currentText}
   
   
