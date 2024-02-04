@@ -1,9 +1,26 @@
 ---
 import Layout from "@layouts/BaseLayout.astro";
 import {Button} from "@ui/button";
+import { 
+    Card,
+    CardTitle,
+    CardHeader,
+    CardContent,
+    CardDescription,
+    CardFooter
+ } from "@ui/card";
+ import Procect from "@components/projekter/procect.astro";
 ---
 
 <Layout
 >
-    <button>hello</button>
+    
+    <div class="flex gap-12 justify-evenly">
+        <Procect
+            title="Birthe Finnemann"
+        ></Procect>
+        <Procect
+            title="hello world"
+        ></Procect>
+    </div>
 </Layout>
