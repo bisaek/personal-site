@@ -23,7 +23,8 @@
       }
 
       function chooseNextQuote() {
-        
+        if(currentQuoteIndex == quotes.length - 1) currentQuoteIndex = 0
+        else currentQuoteIndex++
       }
 
       function addLetter() {
