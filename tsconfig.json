@@ -4,13 +4,13 @@
     "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@assets/*": ["src/assets/*"],
+      "@components/*": ["./src/components/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@assets/*": ["./src/assets/*"],
       "@/*": [
         "./src/*"
       ],
-      "@ui/*": ["src/components/ui/*"]
+      "@ui/*": ["./src/components/ui/*"]
     }
   }
 }
