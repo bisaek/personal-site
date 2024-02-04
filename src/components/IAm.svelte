@@ -10,7 +10,7 @@
       let shouldAddLetter = true;
 
       setInterval(() => {
-            if(!shouldAddLetter && currentText == "") {
+            if(!shouldAddLetter && currentText == "Jeg") {
               chooseNextQuote()
               shouldAddLetter = true;
             } else if (currentText == quotes[currentQuoteIndex] && shouldAddLetter) shouldAddLetter = false
