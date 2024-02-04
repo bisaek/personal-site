@@ -9,7 +9,8 @@
       "@assets/*": ["src/assets/*"],
       "@/*": [
         "./src/*"
-      ]
+      ],
+      "@ui/*": ["src/components/ui/*"]
     }
   }
 }
