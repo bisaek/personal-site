@@ -6,6 +6,7 @@ import FormattedDate from "../components/FormattedDate.astro";
 import Header from "../components/Header.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import '@/styles/globals.css'
+import Chat from "@components/chat/chat.astro";
 
 ---
 
@@ -23,6 +24,7 @@ import '@/styles/globals.css'
 		<main>
 			<slot></slot>
 		</main>
+		<Chat></Chat>
 		<!-- <Footer /> -->
 	</body>
 </html>
