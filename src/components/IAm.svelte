@@ -28,7 +28,7 @@
       }
 
       function addLetter() {
-        
+        currentText = quotes[currentQuoteIndex].slice(0, currentText.length + 1)
       }
 
       function removeLetter() {
