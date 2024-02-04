@@ -9,18 +9,26 @@ import {
     CardDescription,
     CardFooter
  } from "@ui/card";
- import Procect from "@components/projekter/procect.astro";
+ import ProjectCard from "@components/projekter/project-card.astro";
+ import test from "@assets/test.webp";
 ---
 
 <Layout
 >
     
-    <div class="flex gap-12 justify-evenly">
-        <Procect
+    <div class="flex gap-12 justify-evenly relative">
+        <ProjectCard
+            src={test}
             title="Birthe Finnemann"
-        ></Procect>
-        <Procect
+        ></ProjectCard>
+        <ProjectCard
+        src={test}
+            title="Trash Mate"
+        ></ProjectCard>
+        <ProjectCard
+        src={test}
             title="hello world"
-        ></Procect>
+        ></ProjectCard>
+        
     </div>
 </Layout>

@@ -1,0 +1,44 @@
+---
+import { Image } from "astro:assets";
+
+const {title, tags, src} = Astro.props
+---
+
+
+<div
+  class="border bg-card text-card-foreground max-w-md mx-auto shadow-lg rounded-lg overflow-hidden"
+  data-v0-t="card"
+>
+  <Image
+    src={src}
+    alt="Project Image"
+    class="w-full h-64 object-cover"
+    width="400"
+    height="200"
+    style="aspect-ratio: 400 / 200; object-fit: cover;"
+  />
+  <div class="p-4">
+    <h3 class="whitespace-nowrap tracking-tight text-xl font-bold">{title}</h3>
+    <div class="flex flex-wrap gap-2 mb-2">
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+        #javascript
+      </span>
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+        #react
+      </span>
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+        #tailwindcss
+      </span>
+    </div>
+    <p class="text-sm text-gray-600 dark:text-gray-400 my-2">
+      This is a brief description of the web development project. It covers the main technologies used, the purpose
+      of the pr
+    </p>
+    <a
+      class="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+      href="#"
+    >
+      View Project
+    </a>
+  </div>
+</div>
