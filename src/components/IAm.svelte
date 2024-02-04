@@ -6,6 +6,7 @@
         
       ]
       const PAUSE_DURATION = 10;
+      const STARTING_WORD = "jeg"
 
       let currentQuoteIndex = 0
       let currentText = "";
@@ -15,7 +16,7 @@
       
 
       setInterval(() => {
-            if(!isAddingLetters && currentText == "Jeg") {
+            if(!isAddingLetters && currentText == STARTING_WORD) {
               chooseNextQuote()
               isAddingLetters = true;
               pauseCounter  = 0
