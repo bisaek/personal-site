@@ -13,7 +13,7 @@
             if(!shouldAddLetter && currentText == "") {
               chooseNextQuote()
               shouldAddLetter = true;
-            } else if (currentText == quotes[currentQuoteIndex]) shouldAddLetter = false
+            } else if (currentText == quotes[currentQuoteIndex] && shouldAddLetter) shouldAddLetter = false
             else if(shouldAddLetter) addLetter()
             else removeLetter()
       }, 50)
@@ -32,7 +32,7 @@
       }
 
       function removeLetter() {
-        
+        currentText = quotes[currentQuoteIndex].slice(0, currentText.length - 1)
       }
   
   </script>
