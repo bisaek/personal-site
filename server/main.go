@@ -14,6 +14,8 @@ var upgrader = websocket.Upgrader{
 	CheckOrigin:     func(r *http.Request) bool { return true },
 }
 
+var messages = [...]string{"hello", "world"}
+
 func main() {
 	router := gin.Default()
 	router.GET("/ws", func(c *gin.Context) {
@@ -22,6 +24,9 @@ func main() {
 			return
 		}
 		defer conn.Close()
+		for _, message := range messages {
+			conn.WriteMessage(websocket.TextMessage, []byte(message))
+		}
 		for {
 			conn.WriteMessage(websocket.TextMessage, []byte("Hello, WebSocket!"))
 			time.Sleep(time.Second)

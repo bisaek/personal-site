@@ -8,6 +8,17 @@ import {
   
 
 export default function Chat() {
+
+    const wb = new WebSocket("ws://localhost:8080/ws")
+
+    wb.addEventListener("open", (event) => {
+        console.log("open")
+    })
+
+    wb.addEventListener("message", event => {
+        console.log(event.data)
+    })
+
     return (
         <div class=" right-4 bottom-4 fixed">
             <Popover>
