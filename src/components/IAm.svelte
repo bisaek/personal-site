@@ -24,7 +24,7 @@
       }, 50)
 
       function chooseRandomQuote() {
-        
+        currentQuoteIndex = Math.floor(Math.random() * quotes.length)
       }
 
       function chooseNextQuote() {
