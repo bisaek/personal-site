@@ -2,22 +2,14 @@
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "strictNullChecks": true,
-    "baseUrl": "C:/Users/Bruger/Documents/GitHub/personal-site",
+    "baseUrl": ".",
     "paths": {
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@layouts/*": [
-        "src/layouts/*"
-      ],
-      "@assets/*": [
-        "src/assets/*"
-      ],
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@assets/*": ["src/assets/*"],
       "@/*": [
         "./src/*"
       ]
-    },
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    }
   }
 }
