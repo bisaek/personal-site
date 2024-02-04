@@ -6,7 +6,7 @@
         
       ]
       const PAUSE_DURATION = 10;
-      const STARTING_WORD = "jeg"
+      const STARTING_WORD = "Jeg"
 
       let currentQuoteIndex = 0
       let currentText = "";
