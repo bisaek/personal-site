@@ -5,21 +5,25 @@
         "Jeg vil hjælpe dig",
         
       ]
+      const PAUSE_DURATION = 10;
+
       let currentQuoteIndex = 0
       let currentText = "";
-      let shouldAddLetter = true;
-      let waited = 0;
+      let isAddingLetters = true;
+      let pauseCounter  = 0;
+
+      
 
       setInterval(() => {
-            if(!shouldAddLetter && currentText == "Jeg") {
+            if(!isAddingLetters && currentText == "Jeg") {
               chooseNextQuote()
-              shouldAddLetter = true;
-              waited = 0
-            } else if (currentText == quotes[currentQuoteIndex] && waited != 10) {
-              shouldAddLetter = false
-              waited++
+              isAddingLetters = true;
+              pauseCounter  = 0
+            } else if (currentText == quotes[currentQuoteIndex] && pauseCounter  != PAUSE_DURATION) {
+              isAddingLetters = false
+              pauseCounter ++
             }
-            else if(shouldAddLetter) addLetter()
+            else if(isAddingLetters) addLetter()
             else removeLetter()
       }, 50)
 
