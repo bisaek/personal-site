@@ -5,8 +5,9 @@ import { SITE_TITLE } from '../consts';
 
 <header class="transition  flex justify-between top-0  sticky">
 	
-		<h2 class="text-2xl w-auto p-8">
-			{Astro.url.pathname != "/h" && SITE_TITLE}
+		<h2 class="text-2xl w-auto p-8 flex">
+			
+			{Astro.url.pathname != "/" ? <HeaderLink href="/" class="flex">{SITE_TITLE.split("").map(character => <div class="hover:-translate-y-1">{character}</div>)</HeaderLink>} : SITE_TITLE.split("").map(character => <div class="hover:-translate-y-1">{character}</div>)}
 		</h2>
 	<nav class="flex flex-row justify-between gap-6 p-8">
 			<!-- <HeaderLink href="/">Home</HeaderLink> -->
