@@ -24,7 +24,7 @@ import Chat from "@components/chat/Chat.jsx";
 		<main>
 			<slot></slot>
 		</main>
-		<Chat></Chat>
+		<Chat client:only="react"></Chat>
 		<!-- <Footer /> -->
 	</body>
 </html>
