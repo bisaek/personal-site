@@ -6,6 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import IAm from '../components/IAm.svelte';
 import ArrowLink from "../components/ArrowLink.astro";
+import FrameworkHover from "@components/index/FrameworkHover";
 ---
 
 <BaseLayout>
@@ -25,7 +26,7 @@ import ArrowLink from "../components/ArrowLink.astro";
 	
 		</div>
 		<div class="w-1/3 text-xl flex flex-col gap-4">
-			<p>Mit navn er Bertram, og jeg er en passioneret webudvikler, ivrig efter at bidrage til dit næste projekt. Med solid erfaring i at skabe moderne og responsive hjemmesider, er jeg veludrustet til at udvikle en hjemmeside for dig ved hjælp af førende teknologier som <a href="https://react.dev/" target="_blank" class="underline hover:underline-offset-4 hover:text-slate-400 transition" >React</a>, <a href="https://svelte.dev/" class="underline hover:underline-offset-4 hover:text-slate-400 transition" target="blank">Svelte</a>, <a href="https:astro.build" target="_blank" class="underline hover:underline-offset-4 hover:text-slate-400 transition">Astro</a>, eller jeg kan designe en skræddersyet WordPress hjemmeside. Jeg ser frem til at omsætte dine ideer til virkelighed med min ekspertise.</p>
+			<p>Mit navn er Bertram, og jeg er en passioneret webudvikler, ivrig efter at bidrage til dit næste projekt. Med solid erfaring i at skabe moderne og responsive hjemmesider, er jeg veludrustet til at udvikle en hjemmeside for dig ved hjælp af førende teknologier som <FrameworkHover framework="react" client:idle />, <FrameworkHover framework="svelte" client:idle />, <FrameworkHover framework="astro" client:idle />, eller jeg kan designe en skræddersyet WordPress hjemmeside. Jeg ser frem til at omsætte dine ideer til virkelighed med min ekspertise.</p>
 		</div>
 
 	</div>
