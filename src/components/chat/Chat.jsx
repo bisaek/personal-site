@@ -24,7 +24,9 @@ export default function Chat() {
             <Popover>
             <PopoverTrigger><img class="h-16 hover:scale-110 transition" src={chatRead.src}></img></PopoverTrigger>
             <PopoverContent className="lg:h-96">
-                <div>hello world</div>
+                <h3 classname="text-2xl">Chat</h3>
+
+
             </PopoverContent>
             </Popover>
         </div>
