@@ -1,6 +1,7 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
+import Language from "@components/Language";
 ---
 
 <header class="transition flex justify-between top-0 sticky">
@@ -30,6 +31,7 @@ import { SITE_TITLE } from "../consts";
       GitHub
     </HeaderLink>
     <HeaderLink>Kontakt</HeaderLink>
+    <Language client:idle />
   </nav>
 </header>
 
