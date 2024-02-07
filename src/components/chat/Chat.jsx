@@ -26,6 +26,9 @@ export default function Chat() {
             <PopoverContent className="lg:h-96">
                 <h3 classname="text-2xl">Chat</h3>
 
+                <div>
+                    
+                </div>
 
             </PopoverContent>
             </Popover>
