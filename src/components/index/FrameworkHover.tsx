@@ -21,7 +21,7 @@ const frameworks = {
 
 export default function FrameworkHover(props) {
     return (
-        <HoverCard>
+        <HoverCard openDelay={100} closeDelay={100}>
             <HoverCardTrigger>
                 <a href={frameworks[props.framework].url} target="_blank" className="underline hover:underline-offset-4 hover:text-slate-400 transition" >{frameworks[props.framework].triggerText}</a>
             </HoverCardTrigger>
