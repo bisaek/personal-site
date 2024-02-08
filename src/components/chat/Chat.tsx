@@ -8,6 +8,7 @@ import {
   
 import { Card, CardContent, CardFooter, CardTitle, CardHeader, CardDescription } from "@ui/card";
 import { Input } from "@ui/input";
+import { ScrollArea } from "@ui/scroll-area";
 import React from "react";
 
 export default function Chat() {
@@ -28,15 +29,42 @@ export default function Chat() {
             <PopoverTrigger><img className="h-16 hover:scale-110 transition" src={chatRead.src}></img></PopoverTrigger>
             <PopoverContent className="" side="left">
 
-                <Card className="   ">
-                    <CardTitle>Chat</CardTitle>
-                    <CardContent>
-                        hello world
-                    </CardContent>
-                    <CardFooter>
-                        <Input></Input>
-                    </CardFooter>
-                </Card>
+                <div className="flex flex-col gap-4">
+                    <h3 className="text-3xl">Chat</h3>
+                    <ScrollArea className="h-96 overflow-x-auto" type="auto">
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                        <div className="text-xl">hello</div>
+                    </ScrollArea>
+                    <div><input type="text" /></div>
+                </div>
 
             </PopoverContent>
             </Popover>
