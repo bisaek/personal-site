@@ -9,7 +9,7 @@
       const STARTING_WORD = "Jeg"
 
       let currentQuoteIndex = 0
-      let currentText = "";
+      let currentText = "J";
       let isAddingLetters = true;
       let pauseCounter  = 0;
 
