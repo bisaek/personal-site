@@ -9,11 +9,13 @@ import {
 import { Card, CardContent, CardFooter, CardTitle, CardHeader, CardDescription } from "@ui/card";
 import { Input } from "@ui/input";
 import { ScrollArea } from "@ui/scroll-area";
-import React from "react";
+import React, {useState} from "react";
 
 export default function Chat() {
 
     const wb = new WebSocket("ws://localhost:8080/ws")
+
+    const [messages, setMessages] = useState([""])
 
     wb.addEventListener("open", (event) => {
         console.log("open")
@@ -21,6 +23,7 @@ export default function Chat() {
 
     wb.addEventListener("message", event => {
         console.log(event.data)
+        setMessages([...messages, event.data])
     })
 
     return (
@@ -32,36 +35,7 @@ export default function Chat() {
                 <div className="flex flex-col gap-4">
                     <h3 className="text-3xl">Chat</h3>
                     <ScrollArea className="h-96 overflow-x-auto" type="auto">
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
-                        <div className="text-xl">hello</div>
+                        {messages.map((message) => <div>{message}</div>)}
                     </ScrollArea>
                     <div><input type="text" /></div>
                 </div>
